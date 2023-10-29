@@ -4,7 +4,7 @@ export default () => {
     return (
         <>
             <Menu />
-            <h1>Home</h1>
+            <h1>Sobre</h1>
         </>
     );
 }
