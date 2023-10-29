@@ -17,7 +17,7 @@ export const StyledFooter = styled.footer`
   color: #fff;
   text-align: center;
   padding: 20px 0;
-`
+`;
 
 export const StyledList = styled.ul`
   list-style: none;
@@ -61,21 +61,21 @@ export const Button = styled.button`
   overflow: hidden;
   transition: all .5s;
   box-shadow: 0px 1px 2px rgba(0,0,0,.2);
-  `
+  `;
 
 export const TitlePage = styled.h1`
   font-family: helvetica;
   font-size: 50px;
- `
+ `;
 
 export const InformacoesCep = styled.div`
   margin: 20px;
   display: flex;
   flex-direction: column;
-`
+`;
 export const Section = styled.section`
   font-family: helvetica;
-`
+`;
 
 export const CircleImg = styled.div`
   position: absolute;
@@ -92,4 +92,20 @@ export const CircleImg = styled.div`
     height: 100%; 
     object-fit: cover; 
   } 
-`
+`;
+
+export const Container = styled.div`
+  text-align: left;
+  font-family: helvetica;
+`;
+
+export const Form = styled.form`
+  display: flex;
+  font-family: helvetica;
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    margin-bottom: 10px;
+  }
+`;
