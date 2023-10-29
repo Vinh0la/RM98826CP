@@ -1,10 +1,13 @@
 import Menu from '../components/Menu';
+import Footer from '../components/Rodape';
+import { TitlePage } from '../styles/Estilos';
 
 export default () => {
     return (
         <>
             <Menu />
-            <h1>Tecnologia Espacial</h1>
+            <TitlePage>Tecnologia Espacial</TitlePage>
+            <Footer/>
         </>
     );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { lightTheme, darkTheme, GlobalStyle } from './styles/Estilos';
+import { lightTheme, darkTheme, GlobalStyle, Button } from './styles/Estilos';
 import { ThemeProvider } from 'styled-components';
 import Casa from './pages/home';
 import Sobre from './pages/Sobre';
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <button onClick={mudarTheme}>BOTÃO</button>
+       <Button onClick={mudarTheme}>Theme</Button>
       <GlobalStyle />
       <BrowserRouter>
         <Routes>
