@@ -5,6 +5,7 @@ import {TitlePage, Container, Form } from "../styles/Estilos";
 import axios from "axios";
 
 function Cep() {
+    // Declaração de estados para armazenar dados dos inputs e mensagens de erro/sucesso
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [cep, setCep] = useState('');
@@ -14,28 +15,35 @@ function Cep() {
     const [error, setError] = useState(null);
     const [successMessage, setSuccessMessage] = useState('');
   
+    // Função para capturar mudanças no input de CEP
     function handleCepChange(e) {
       setCep(e.target.value);
     }
   
+    // Função para pesquisar CEP utilizando a API ViaCEP
     function pesquisaCEP() {
       axios
         .get(`https://viacep.com.br/ws/${cep}/json`)
         .then(function (response) {
           if (response.data && !response.data.error) {
+            // Se encontrar o CEP, atualiza o estado com informações de endereço
             setRua(response.data.logradouro);
             setBairro(response.data.bairro);
             setError(null);
           } else {
+            // Se não encontrar o CEP, exibe mensagem de erro
             setError('CEP NÃO ENCONTRADO');
           }
         })
         .catch(function (error) {
+          // Em caso de erro na requisição, exibe mensagem de erro
           setError('CEP NÃO ENCONTRADO');
         });
     }
   
+    // Função para simular a ação de salvar as informações
     function salvarInformacoes() {
+      // Simulação de mensagem de sucesso ao salvar informações
       setSuccessMessage('Informações salvas com sucesso!');
     }
   
@@ -77,6 +85,6 @@ function Cep() {
         <Footer />
       </Container>
     );
-  }
-  
-  export default Cep;
+}
+
+export default Cep;

@@ -6,6 +6,7 @@ import contact from '../assets/icons/contact.svg';
 import technology from '../assets/icons/technology.svg';
 
 const Menu = () => {
+  // Componente que representa o menu de navegação
   return (
     <StyledNav>
       <StyledList>
@@ -17,4 +18,5 @@ const Menu = () => {
     </StyledNav>
   );
 };
+
 export default Menu;

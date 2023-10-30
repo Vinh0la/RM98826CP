@@ -4,6 +4,7 @@ import { TitlePage, Section, Center } from '../styles/Estilos';
 import modelos from '../assets/images/tecespaciais.jpg'
 
 export default () => {
+    //Estrutura da página Tecnologia Espacial
     return (
         <>
             <Menu />

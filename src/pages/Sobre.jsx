@@ -6,6 +6,7 @@ import SatelieIcon from '../assets/icons/SateliteIcon.svg'
 import Dev from '../assets/images/Dev.jpg'
 
 export default () => {
+    // Estrutura da página "Sobre"
     return (
         <>
             <Menu />
