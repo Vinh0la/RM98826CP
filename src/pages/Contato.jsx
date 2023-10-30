@@ -43,7 +43,7 @@ function Cep() {
       <Container>
         <Menu />
         <TitlePage>Contato</TitlePage>
-        <h2>Preenchimento de dados</h2>
+        <h2>Preencha com seus dados para podermos entrar em contato!</h2>
         <Form>
           <label>
             CEP:

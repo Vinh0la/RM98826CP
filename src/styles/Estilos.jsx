@@ -75,23 +75,25 @@ export const InformacoesCep = styled.div`
 `;
 export const Section = styled.section`
   font-family: helvetica;
+  word-wrap: break-word;
 `;
 
 export const CircleImg = styled.div`
-  position: absolute;
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
-  overflow: hidden; 
-  margin: 20px auto; 
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
   display: flex;
   justify-content: flex-start;
+  margin-left: 5px; 
     
   img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-  } 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const Container = styled.div`
@@ -108,4 +110,9 @@ export const Form = styled.form`
   label {
     margin-bottom: 10px;
   }
+`;
+
+export const Center = styled.div`
+  display: flex;
+  justify-content: center;
 `;
